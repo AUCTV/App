@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>YouTube Live Stream</title>
     <style>
         body {
@@ -47,13 +48,32 @@
             font-size: 14px;
             color: #555;
         }
+        .container {
+            width: 80%; 
+            margin:0 auto;
+        }
+
+        .responsive-video{
+            overflow:hidden;
+            padding-bottom:56.25%;
+            position:relative;
+            height:0;
+        }
+
+        .responsive-video iframe{
+            left:0;
+            top:0;
+            height:100%;
+            width:100%;
+            position:absolute;
+        }
+
     </style>
 </head>
 <body>
-
-<div class="video-container">
-    <div class="video">
-        <iframe src="https://www.youtube.com/embed/live_stream?channel=UCEIopE9riXjoUddwoJpQGbQ" frameborder="0" allowfullscreen></iframe>
+<div class="container">
+<div class="responsive-video">
+    <iframe width="1920" height="1080" src="https://www.youtube.com/embed/live_stream?channel=UCEIopE9riXjoUddwoJpQGbQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
         <div class="title">AUCTV Live Stream</div>
     </div>
 </div>
