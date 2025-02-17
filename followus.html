@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="height=device-height, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Follow Us</title>
     <style>
         body {
@@ -24,10 +24,9 @@
             align-items: center;
         }
         .responsive-img {
-            max-width: 100%;
-            max-height: 100%;
-            display: block;
-        
+            width: 100vw;
+            height: 100vh;
+            object-fit: contain;
         }
         .social-links {
             position: absolute;
@@ -39,21 +38,21 @@
         }
         .social-links a {
             position: absolute;
-            width: 15%; /* Adjust as needed */
-            height: 15%; /* Adjust as needed */
+            width: 20%; /* Adjust based on actual icon size and placement */
+            height: 10%; /* Adjust based on actual icon size and placement */
             display: block;
         }
         .youtube {
-            top: 35%;
-            left: 25%;
+            top: 33%;
+            left: 17%;
         }
         .facebook {
             top: 50%;
-            left: 25%;
+            left: 17%;
         }
         .instagram {
-            top: 65%;
-            left: 25%;
+            top: 67%;
+            left: 17%;
         }
     </style>
 </head>
