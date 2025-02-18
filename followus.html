@@ -12,18 +12,22 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            background-color: #002d57;;
+            background-color: #002d57;
         }
         .image-container {
             width: 100vw;
             display: flex;
             flex-direction: column;
+            align-items: center; /* Centering images */
         }
         .image-container a {
-            width: 100%;
+            display: block; /* Ensures the link is fully clickable */
+            width: auto; /* Auto width based on image */
+            text-align: center; /* Ensures proper alignment */
         }
         .image-container img {
-            width: 100%;
+            width: 100%; /* Ensures responsiveness */
+            max-width: 500px; /* Prevents images from being too large */
             height: auto;
             display: block;
         }
@@ -32,13 +36,13 @@
 <body>
     <div class="image-container">
         <img src="FollowUs.png" alt="FollowUs">
-        <a href="https://www.youtube.com/@AdhamCenterAUCTV"  target="_blank">
+        <a href="https://www.youtube.com/@AdhamCenterAUCTV" target="_blank">
             <img src="Youtube.png" alt="Youtube">
         </a>
-        <a href="https://facebook.com/AUCTV"  target="_blank">
+        <a href="https://facebook.com/AUCTV" target="_blank">
             <img src="Facebook.png" alt="Facebook">
         </a>
-        <a href="https://www.instagram.com/AUC.TV"  target="_blank">
+        <a href="https://www.instagram.com/AUC.TV" target="_blank">
             <img src="Instagram.png" alt="Instagram">
         </a>
     </div>
