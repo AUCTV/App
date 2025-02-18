@@ -67,10 +67,24 @@
             width:100%;
             position:absolute;
         }
-
+   .image-container {
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+        }
+        .image-container a {
+            width: 100%;
+        }
+        .image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
     </style>
 </head>
 <body>
+<img src="Live.png"  class="image-container" alt="Featured">
+</br>
 <div class="container">
 <div class="responsive-video">
     <iframe width="1920" height="1080" src="https://www.youtube.com/embed/live_stream?channel=UCEIopE9riXjoUddwoJpQGbQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
