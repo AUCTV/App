@@ -43,13 +43,26 @@
             font-size: 14px;
             color: #555;
         }
+     .image-container {
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+        }
+        .image-container a {
+            width: 100%;
+        }
+        .image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
     </style>
 </head>
 <body>
-
+    
 
 <div class="video-container">
-    <img src="Featured.png" alt="Featured">
+     <img src="Featured.png"  class="image-container" alt="Featured">
 </br>
     <div class="video" onclick="playVideo(this)">
         <iframe src="https://www.youtube.com/embed/m46JSJYZnPQ?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
