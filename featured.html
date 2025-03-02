@@ -27,6 +27,7 @@
             background-color: #fff;
             border-radius: 5px;
             overflow: hidden;
+            cursor: pointer;
         }
         iframe {
             width: 100%;
@@ -43,7 +44,7 @@
             font-size: 14px;
             color: #555;
         }
-     .image-container {
+        .image-container {
             width: 100vw;
             display: flex;
             flex-direction: column;
@@ -60,7 +61,7 @@
 </head>
 <body>
     
-<img src="Featured.png"  class="image-container" alt="Featured">
+<img src="Featured.png" class="image-container" alt="Featured">
 </br>
 <div class="video-container">
      
@@ -121,18 +122,18 @@
 
         // Play the selected video
         currentlyPlaying = iframe;
-        const newSrc = src + '&autoplay=1';
+        const newSrc = src.includes("autoplay=1") ? src : src + '&autoplay=1';
         iframe.src = newSrc;
 
-        // Request full screen
-        if (videoElement.requestFullscreen) {
-            videoElement.requestFullscreen();
-        } else if (videoElement.mozRequestFullScreen) { // Firefox
-            videoElement.mozRequestFullScreen();
-        } else if (videoElement.webkitRequestFullscreen) { // Chrome, Safari, and Opera
-            videoElement.webkitRequestFullscreen();
-        } else if (videoElement.msRequestFullscreen) { // IE/Edge
-            videoElement.msRequestFullscreen();
+        // Request full screen on the iframe itself, not the whole div
+        if (iframe.requestFullscreen) {
+            iframe.requestFullscreen();
+        } else if (iframe.mozRequestFullScreen) { // Firefox
+            iframe.mozRequestFullScreen();
+        } else if (iframe.webkitRequestFullscreen) { // Chrome, Safari, Opera
+            iframe.webkitRequestFullscreen();
+        } else if (iframe.msRequestFullscreen) { // IE/Edge
+            iframe.msRequestFullscreen();
         }
     }
 </script>
