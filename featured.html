@@ -27,7 +27,6 @@
             background-color: #fff;
             border-radius: 5px;
             overflow: hidden;
-            cursor: pointer;
         }
         iframe {
             width: 100%;
@@ -49,9 +48,6 @@
             display: flex;
             flex-direction: column;
         }
-        .image-container a {
-            width: 100%;
-        }
         .image-container img {
             width: 100%;
             height: auto;
@@ -63,45 +59,100 @@
     
 <img src="Featured.png" class="image-container" alt="Featured">
 </br>
+
 <div class="video-container">
-     
-    <div class="video" onclick="playVideo(this)">
-        <iframe src="https://www.youtube.com/embed/m46JSJYZnPQ?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+    <div class="video">
+        <iframe 
+            src="https://www.youtube.com/embed/m46JSJYZnPQ?enablejsapi=1" 
+            frameborder="0" 
+            allowfullscreen 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            onclick="playVideo(event)">
+        </iframe>
         <div class="title">AUC Talent Show</div>
-        <div class="description">Watch talented students from The American University in Cairo showcase their skills and creativity across music, dance, and more.</div>
+        <div class="description">Watch talented students from The American University in Cairo showcase their skills.</div>
     </div>
-    <div class="video" onclick="playVideo(this)">
-        <iframe src="https://www.youtube.com/embed/5WJRJ74wTtM?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+
+    <div class="video">
+        <iframe 
+            src="https://www.youtube.com/embed/5WJRJ74wTtM?enablejsapi=1" 
+            frameborder="0" 
+            allowfullscreen 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            onclick="playVideo(event)">
+        </iframe>
         <div class="title">The World Urban Campaign Assembly</div>
         <div class="description">Experience the highlights of the 2024 World Urban Campaign Assembly.</div>
     </div>
-    <div class="video" onclick="playVideo(this)">
-        <iframe src="https://www.youtube.com/embed/IygSg4uB6-o?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+
+    <div class="video">
+        <iframe 
+            src="https://www.youtube.com/embed/IygSg4uB6-o?enablejsapi=1" 
+            frameborder="0" 
+            allowfullscreen 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            onclick="playVideo(event)">
+        </iframe>
         <div class="title">Made In Egypt</div>
         <div class="description">Made in Egypt exhibition showcasing innovative projects by Egyptian designers.</div>
     </div>
-    <div class="video" onclick="playVideo(this)">
-        <iframe src="https://www.youtube.com/embed/tWSyDivGEQA?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+
+    <div class="video">
+        <iframe 
+            src="https://www.youtube.com/embed/tWSyDivGEQA?enablejsapi=1" 
+            frameborder="0" 
+            allowfullscreen 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            onclick="playVideo(event)">
+        </iframe>
         <div class="title">Alumni Homecoming</div>
         <div class="description">Our alumni showed up in style on November 1st, reconnecting with old friends.</div>
     </div>
-    <div class="video" onclick="playVideo(this)">
-        <iframe src="https://www.youtube.com/embed/rP2x6zGI1Ww?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+
+    <div class="video">
+        <iframe 
+            src="https://www.youtube.com/embed/rP2x6zGI1Ww?enablejsapi=1" 
+            frameborder="0" 
+            allowfullscreen 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            onclick="playVideo(event)">
+        </iframe>
         <div class="title">AUC Campus Book Fair</div>
         <div class="description">The Campus Book Fair was a huge hit!</div>
     </div>
-    <div class="video" onclick="playVideo(this)">
-        <iframe src="https://www.youtube.com/embed/xm9-DraLUYA?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+
+    <div class="video">
+        <iframe 
+            src="https://www.youtube.com/embed/xm9-DraLUYA?enablejsapi=1" 
+            frameborder="0" 
+            allowfullscreen 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            onclick="playVideo(event)">
+        </iframe>
         <div class="title">AUC Co-Curricular Day</div>
         <div class="description">AUC's Office of Student Life hosted Co-Curricular Day.</div>
     </div>
-    <div class="video" onclick="playVideo(this)">
-        <iframe src="https://www.youtube.com/embed/85C2ADfZTV4?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+
+    <div class="video">
+        <iframe 
+            src="https://www.youtube.com/embed/85C2ADfZTV4?enablejsapi=1" 
+            frameborder="0" 
+            allowfullscreen 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            onclick="playVideo(event)">
+        </iframe>
         <div class="title">She Arts '24: Artistic Creations by her</div>
         <div class="description">An international cultural festival that brings together female artists.</div>
-    </div>     
-    <div class="video" onclick="playVideo(this)">
-        <iframe src="https://www.youtube.com/embed/ft9YTDJDg-w?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <div class="video">
+        <iframe 
+            src="https://www.youtube.com/embed/ft9YTDJDg-w?enablejsapi=1" 
+            frameborder="0" 
+            allowfullscreen 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            onclick="playVideo(event)">
+        </iframe>
         <div class="title">Taha ElMansy Performs Resonance Through Time</div>
         <div class="description">A captivating journey through the evolution of classical guitar.</div>
     </div>
@@ -110,8 +161,17 @@
 <script>
     let currentlyPlaying = null;
 
-    function playVideo(videoElement) {
+    function playVideo(event) {
+        event.stopPropagation(); // Prevents event bubbling
+
+        const videoElement = event.currentTarget; // Get the clicked element
         const iframe = videoElement.querySelector('iframe');
+
+        // Ensure only clicks on the video itself trigger playback
+        if (event.target.tagName !== "IFRAME") {
+            return;
+        }
+
         const src = iframe.src;
 
         // Stop currently playing video
@@ -128,11 +188,11 @@
         // Request full screen on the iframe itself, not the whole div
         if (iframe.requestFullscreen) {
             iframe.requestFullscreen();
-        } else if (iframe.mozRequestFullScreen) { // Firefox
+        } else if (iframe.mozRequestFullScreen) {
             iframe.mozRequestFullScreen();
-        } else if (iframe.webkitRequestFullscreen) { // Chrome, Safari, Opera
+        } else if (iframe.webkitRequestFullscreen) {
             iframe.webkitRequestFullscreen();
-        } else if (iframe.msRequestFullscreen) { // IE/Edge
+        } else if (iframe.msRequestFullscreen) {
             iframe.msRequestFullscreen();
         }
     }
